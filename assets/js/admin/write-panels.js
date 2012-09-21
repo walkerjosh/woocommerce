@@ -71,7 +71,7 @@ jQuery( function($){
 	// TABS
 	$('ul.wc-tabs').show();
 	$('div.panel-wrap').each(function(){
-		$('div.panel:not(div.panel:first)', this).hide();
+		$('div.panel:not(:first)', this).hide();
 	});
 	$('ul.wc-tabs a').click(function(){
 		var panel_wrap =  $(this).closest('div.panel-wrap');
